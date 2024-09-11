@@ -8,11 +8,8 @@
   <body>
     <h1>Order Your Customized T-shirt</h1>
     <form action="/submit-order" method="POST">
-      <!-- T-shirt Details -->
       <fieldset>
         <legend>T-shirt Details</legend>
-
-        <!-- Tagline on the Shirt -->
         <label for="tagline">Tagline on the Shirt:</label>
         <input
           type="text"
@@ -22,8 +19,6 @@
           required
         />
         <br /><br />
-
-        <!-- T-shirt Color -->
         <label for="color">T-shirt Color:</label>
         <select id="color" name="color" required>
           <option value="" disabled selected>Select a color</option>
@@ -34,8 +29,6 @@
           <option value="white">White</option>
         </select>
         <br /><br />
-
-        <!-- T-shirt Size -->
         <label for="size">T-shirt Size:</label>
         <select id="size" name="size" required>
           <option value="" disabled selected>Select a size</option>
@@ -45,8 +38,6 @@
           <option value="xlarge">Extra Large</option>
         </select>
         <br /><br />
-
-        <!-- Quantity -->
         <label for="quantity">Quantity:</label>
         <input
           type="number"
@@ -58,17 +49,11 @@
           required
         />
         <br /><br />
-
-        <!-- Delivery Date -->
         <label for="delivery-date">Delivery Date:</label>
         <input type="date" id="delivery-date" name="delivery-date" required />
       </fieldset>
-
-      <!-- Delivery Details -->
       <fieldset>
         <legend>Delivery Details</legend>
-
-        <!-- Recipient Name -->
         <label for="name">Recipient's Name:</label>
         <input
           type="text"
@@ -78,8 +63,6 @@
           required
         />
         <br /><br />
-
-        <!-- Address -->
         <label for="address">Address:</label>
         <input
           type="text"
@@ -89,8 +72,6 @@
           required
         />
         <br /><br />
-
-        <!-- Email -->
         <label for="email">Email:</label>
         <input
           type="email"
@@ -100,8 +81,6 @@
           required
         />
         <br /><br />
-
-        <!-- Phone Number -->
         <label for="phone">Phone Number:</label>
         <input
           type="tel"
@@ -113,8 +92,6 @@
           required
         />
       </fieldset>
-
-      <!-- Additional Comments -->
       <label for="comments">Additional Comments or Instructions:</label>
       <textarea
         id="comments"
@@ -123,8 +100,6 @@
         rows="4"
       ></textarea>
       <br /><br />
-
-      <!-- Form Actions -->
       <button type="submit">Place Order</button>
       <input type="reset" value="Reset Form" />
     </form>
